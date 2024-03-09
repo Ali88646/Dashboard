@@ -10,19 +10,13 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { FaUserCircle } from "react-icons/fa";
-const TopNav = () => {
+const TopNav = ({ title }) => {
   const menuItemText = ["Profile", "Home", "Support", "Logout"];
   return (
     <Box>
-      <HStack
-        maxW={"80rem"}
-        h={64 / 4}
-        justify={"space-between"}
-        px={114 / 4}
-        mx={"auto"}
-      >
+      <HStack maxW={"70rem"} h={64 / 4} justify={"space-between"} mx={"auto"}>
         <Heading fontSize={"28px"} fontWeight={"bold"}>
-          Dashboard
+          {title}
         </Heading>
         <Menu>
           <MenuButton as={Button}>
@@ -35,8 +29,9 @@ const TopNav = () => {
             borderRadius={10}
             boxShadow={"sm"}
           >
-            {menuItemText.map((items) => (
+            {menuItemText.map((items, i) => (
               <MenuItem
+                key={i}
                 color={"#777"}
                 _hover={{ bg: "#fff", color: "#000" }}
                 padding={3}
