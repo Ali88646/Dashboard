@@ -10,7 +10,22 @@ const SideNav = () => {
     { icon: TbTransferVertical, text: "Transactions", link: "/transactions" },
   ];
   return (
-    <Stack boxShadow="lg" w="16rem" h="100vh" justifyContent={"space-between"}>
+    <Stack
+      boxShadow={{
+        base: "none",
+        lg: "lg",
+      }}
+      w={{
+        base: "full",
+        lg: "16rem",
+      }}
+      bg={{
+        lg: "none",
+        base: "#ccc",
+      }}
+      h="100vh"
+      justifyContent={"space-between"}
+    >
       <Box>
         <Heading textAlign="center" as="h1" fontSize="20px" pt="3.5rem">
           @Admin Dashboard

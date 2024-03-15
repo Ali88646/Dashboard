@@ -10,11 +10,19 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { FaUserCircle } from "react-icons/fa";
-const TopNav = ({ title }) => {
+import { IoMenu } from "react-icons/io5";
+//======> component Start
+const TopNav = ({ title, onOpen }) => {
   const menuItemText = ["Profile", "Home", "Support", "Logout"];
   return (
-    <Box>
+    <Box px={4}>
       <HStack maxW={"70rem"} h={64 / 4} justify={"space-between"} mx={"auto"}>
+        <Icon
+          fontSize={"24px"}
+          as={IoMenu}
+          onClick={onOpen}
+          display={{ base: "block", lg: "none" }}
+        />
         <Heading fontSize={"28px"} fontWeight={"bold"}>
           {title}
         </Heading>
