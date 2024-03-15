@@ -20,7 +20,7 @@ const SideNav = () => {
         lg: "16rem",
       }}
       bg={{
-        lg: "none",
+        lg: "#fff",
         base: "#ccc",
       }}
       h="100vh"

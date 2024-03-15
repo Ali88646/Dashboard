@@ -15,7 +15,7 @@ import { IoMenu } from "react-icons/io5";
 const TopNav = ({ title, onOpen }) => {
   const menuItemText = ["Profile", "Home", "Support", "Logout"];
   return (
-    <Box px={4}>
+    <Box px={4} bg={"#fff"}>
       <HStack maxW={"70rem"} h={64 / 4} justify={"space-between"} mx={"auto"}>
         <Icon
           fontSize={"24px"}
