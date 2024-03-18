@@ -9,8 +9,9 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import { FaUserCircle } from "react-icons/fa";
+import { FaUser, FaUserCircle } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
+import { ButtonComponent } from "../pages/Dashboard/components/Portfolio";
 //======> component Start
 const TopNav = ({ title, onOpen }) => {
   const menuItemText = ["Profile", "Home", "Support", "Logout"];
@@ -27,9 +28,7 @@ const TopNav = ({ title, onOpen }) => {
           {title}
         </Heading>
         <Menu>
-          <MenuButton as={Button}>
-            <Icon as={FaUserCircle} fontSize={"24px"} />
-          </MenuButton>
+          <ButtonComponent icons={FaUserCircle} size={24} />
           <MenuList
             width={"15vw"}
             bg={"#f3f3f7"}

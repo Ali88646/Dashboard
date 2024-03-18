@@ -63,11 +63,11 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-function ButtonComponent({ icons, text }) {
+export function ButtonComponent({ icons, text, size }) {
   return (
     <Button>
       <HStack>
-        <Icon as={icons} />
+        <Icon as={icons} style={{ width: `${size}px`, height: `${size}px` }} />
         <Text>{text}</Text>
       </HStack>
     </Button>
