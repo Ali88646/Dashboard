@@ -9,19 +9,19 @@ const Dashboard = () => {
   return (
     <DashboardLayout title="Dashboard">
       <Grid
-        gridAutoColumns={{ md: "repeat(2, 1fr)", base: "repeat(1,1fr)" }}
+        gridAutoColumns={{ xl: "repeat(2, 1fr)", base: "repeat(1,1fr)" }}
         gap={6}
       >
-        <GridItem colSpan="2">
+        <GridItem colSpan={{ base: 1, lg: 2 }}>
           <Portfolio />
         </GridItem>
-        <GridItem colSpan="1">
+        <GridItem>
           <Price />
         </GridItem>
-        <GridItem colSpan="1">
+        <GridItem>
           <Transactions />
         </GridItem>
-        <GridItem colSpan="1">
+        <GridItem>
           <InfoCard
             imgUrl={"/visual.svg"}
             tagText={"Loans"}
@@ -32,7 +32,7 @@ const Dashboard = () => {
             }
           />
         </GridItem>
-        <GridItem colSpan="1">
+        <GridItem>
           <InfoCard
             imgUrl={"/visual2.svg"}
             tagText={"Contacts"}
