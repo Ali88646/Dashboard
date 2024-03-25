@@ -20,7 +20,6 @@ const DashboardLayout = ({ title, children }) => {
           px={4}
           mx={"auto"}
           overflowX={"hidden"}
-          overflowY={"auto"}
         >
           {children}
         </Container>

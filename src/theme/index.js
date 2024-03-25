@@ -115,6 +115,12 @@ export const theme = extendTheme(
           fontSize: "sm",
         },
       },
+
+      FormLabel: {
+        baseStyle: {
+          fontSize: "sm",
+        },
+      },
       Input: {
         variants: {
           outline: {
@@ -122,10 +128,22 @@ export const theme = extendTheme(
               h: "38px",
               borderRadius: "8px",
               fontSize: "sm",
-              pb: "0",
+              colorScheme: "purple",
               _focus: {
-                boxShadow: "0 0 0 1px #5F00D9",
+                boxShadow: "0 0 0 1px #5f00d9",
               },
+            },
+          },
+        },
+      },
+      Textarea: {
+        variants: {
+          outline: {
+            h: "38px",
+            borderRadius: "8px",
+            fontSize: "sm",
+            _focus: {
+              boxShadow: "0 0 0 1px #5f00d9",
             },
           },
         },
