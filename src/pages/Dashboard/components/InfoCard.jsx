@@ -10,7 +10,7 @@ const InfoCard = ({
   textColor,
 }) => {
   return (
-    <CustomCard bg={customBg} h={"full"}>
+    <CustomCard bg={customBg} h={"full"} flex={1} height={"full"}>
       <Tag
         bg="p.purple"
         color={tagColor}
